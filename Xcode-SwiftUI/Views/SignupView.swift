@@ -20,19 +20,18 @@ struct SignupView: View {
         // minimum 6 characters long
         // 1 uppercase character
         // 1 special char
-        let passwordRegex = NSPredicate(format: "SELF MATCHES %@",
-                                        "^(?=.*[a-z])(?=.*[$@$#!%*?&])(?=.*[A-Z]).{6,}$")
+        let passwordRegex = NSPredicate(format: "SELF MATCHES %@", "^(?=.*[a-z])(?=.*[$@$#!%*?&])(?=.*[A-Z]).{6,}$")
         
         return passwordRegex.evaluate(with: password)
     }
     
     var body: some View {
         ZStack {
-            Color(red: 0.6, green: 0.6, blue: 1.0, opacity: 1.0).edgesIgnoringSafeArea(.all)
+            Color(red: 0.6, green: 0.6, blue: 1.0, opacity: 0.9).edgesIgnoringSafeArea(.all)
             
             VStack {
                 HStack {
-                    Text("Create an Account!!")
+                    Text("Create an Account !!")
                         .font(.largeTitle)
                         .bold()
                         .foregroundColor(.white)
