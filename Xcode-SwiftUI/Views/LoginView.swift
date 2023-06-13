@@ -32,7 +32,7 @@ struct LoginView: View {
 
             VStack {
                 HStack {
-                    Text("Welcome Back!!")
+                    Text("Welcome Back !!")
                         .font(.largeTitle)
                         .bold()
                         .foregroundColor(.indigo)
