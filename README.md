@@ -42,7 +42,8 @@
 
 1. プロジェクトをクローンするか、ダウンロードします。
 2. `LoginScreen.swift`ファイル内のFirebaseの設定を編集します。  
-`configureFirebase()`メソッド内のAPIキーとプロジェクトIDを、Firebaseコンソールから取得した情報で置き換えます。
+`configureFirebase()`メソッド内のAPIキーとプロジェクトIDを、  
+Firebaseコンソールから取得した情報で置き換えます。
 
 ```swift
 // Firebaseの設定
