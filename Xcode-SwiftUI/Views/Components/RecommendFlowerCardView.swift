@@ -9,7 +9,7 @@ import SwiftUI
 
 struct RecommendFlowerCardView: View {
     var title: String
-    var price: Int
+    var price: Int16
     var image: String
     var star: Double
     

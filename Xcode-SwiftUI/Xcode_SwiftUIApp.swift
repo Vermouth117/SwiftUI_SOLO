@@ -10,6 +10,7 @@ import FirebaseCore
 
 @main
 struct Xcode_SwiftUIApp: App {
+    let persistenceController = PersistenceController()
     
     init() {
         FirebaseApp.configure()
@@ -18,6 +19,7 @@ struct Xcode_SwiftUIApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environment(\.managedObjectContext, persistenceController.container.viewContext)
         }
     }
 }
