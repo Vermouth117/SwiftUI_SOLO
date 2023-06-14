@@ -2,10 +2,10 @@
 
 ### 【Git 情報】
 
-![GitHub repo size](https://img.shields.io/github/repo-size/Vermouth/SwiftUI_SOLO)
-![GitHub last commit](https://img.shields.io/github/last-commit/Vermouth/SwiftUI_SOLO)
-![GitHub top language](https://img.shields.io/github/languages/top/Vermouth/SwiftUI_SOLO)
-![GitHub language count](https://img.shields.io/github/languages/count/Vermouth/SwiftUI_SOLO)
+![GitHub repo size](https://img.shields.io/github/repo-size/Vermouth117/SwiftUI_SOLO)
+![GitHub last commit](https://img.shields.io/github/last-commit/Vermouth117/SwiftUI_SOLO)
+![GitHub top language](https://img.shields.io/github/languages/top/Vermouth117/SwiftUI_SOLO)
+![GitHub language count](https://img.shields.io/github/languages/count/Vermouth117/SwiftUI_SOLO)
 
 ### 【使用システム】
 
