@@ -58,7 +58,8 @@
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
-
+</details>
+  
 # SwiftUIとFirebaseを使用したログイン画面
 
 このプロジェクトは、SwiftUIとFirebaseを使用してログイン画面を作成するためのサンプルアプリです。ユーザーはメールアドレスとパスワードを使用してログインできます。Firebase Authenticationを使用して、ユーザーの認証情報を管理します。
