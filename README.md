@@ -1,6 +1,5 @@
 # SwiftUIとFirebaseを使用したログイン画面
 
-<!-- ### Git Infomation -->
 <div>
   <img src="https://img.shields.io/badge/Swift-FA7343?style=for-the-badge&logo=swift&logoColor=white">
   <img src="https://img.shields.io/badge/firebase-ffca28?style=for-the-badge&logo=firebase&logoColor=black">
@@ -12,8 +11,6 @@
 ![GitHub last commit](https://img.shields.io/github/last-commit/Vermouth117/SwiftUI_SOLO)
 ![GitHub top language](https://img.shields.io/github/languages/top/Vermouth117/SwiftUI_SOLO)
 ![GitHub language count](https://img.shields.io/github/languages/count/Vermouth117/SwiftUI_SOLO)
-
-<!-- <br> -->
 
 ## 概要
 
