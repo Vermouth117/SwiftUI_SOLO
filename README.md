@@ -1,6 +1,6 @@
 # SwiftUIとFirebaseを使用したログイン画面
 
-### Git Infomation
+<!-- ### Git Infomation -->
 <div>
   <img src="https://img.shields.io/badge/Swift-FA7343?style=for-the-badge&logo=swift&logoColor=white">
   <img src="https://img.shields.io/badge/firebase-ffca28?style=for-the-badge&logo=firebase&logoColor=black">
