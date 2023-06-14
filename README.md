@@ -9,7 +9,7 @@
   <img src="https://img.shields.io/badge/iOS-000000?style=for-the-badge&logo=ios&logoColor=white">
 </div>
 
-</br>
+<br></br>
 
 ![GitHub repo size](https://img.shields.io/github/repo-size/Vermouth117/SwiftUI_SOLO)
 ![GitHub last commit](https://img.shields.io/github/last-commit/Vermouth117/SwiftUI_SOLO)
