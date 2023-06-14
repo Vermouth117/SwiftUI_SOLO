@@ -1,15 +1,11 @@
 # SwiftUI_SOLO
 
-![](img/2023-06-05-01-40-06.png)
-
 ### 【Git 情報】
 
-![GitHub repo size](https://img.shields.io/github/repo-size/SakamotoRyusei627/GreenfieldProject2)
-![GitHub last commit](https://img.shields.io/github/last-commit/SakamotoRyusei627/GreenfieldProject2)
-![GitHub top language](https://img.shields.io/github/languages/top/SakamotoRyusei627/GreenfieldProject2)
-![GitHub language count](https://img.shields.io/github/languages/count/SakamotoRyusei627/GreenfieldProject2)
-
----
+![GitHub repo size](https://img.shields.io/github/repo-size/Vermouth/SwiftUI_SOLO)
+![GitHub last commit](https://img.shields.io/github/last-commit/Vermouth/SwiftUI_SOLO)
+![GitHub top language](https://img.shields.io/github/languages/top/Vermouth/SwiftUI_SOLO)
+![GitHub language count](https://img.shields.io/github/languages/count/Vermouth/SwiftUI_SOLO)
 
 ### 【使用システム】
 
