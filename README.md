@@ -11,7 +11,7 @@
 
 <div>
 <img src="https://img.shields.io/badge/GIT-E44C30?style=for-the-badge&logo=git&logoColor=white">
-<img src="https://img.shields.io/badge/-Slack-4A154B.svg?logo=slack&style=plastic">
+<img src="https://img.shields.io/badge/mac%20os-000000?style=for-the-badge&logo=apple&logoColor=white">
 </div>
 
 <hr>
