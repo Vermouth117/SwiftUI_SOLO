@@ -2,10 +2,6 @@
 
 
 ## 概要
-このプロジェクトは、SwiftUIとFirebaseを使用してログイン画面を作成するためのサンプルアプリです。  
-ユーザーはメールアドレスとパスワードを使用してログインできます。  
-`Firebase Authentication`を使用して、ユーザーの認証情報を管理します。
-
 ### Git Infomation
 <div>
   <img src="https://img.shields.io/badge/Swift-FA7343?style=for-the-badge&logo=swift&logoColor=white">
@@ -18,6 +14,10 @@
 ![GitHub last commit](https://img.shields.io/github/last-commit/Vermouth117/SwiftUI_SOLO)
 ![GitHub top language](https://img.shields.io/github/languages/top/Vermouth117/SwiftUI_SOLO)
 ![GitHub language count](https://img.shields.io/github/languages/count/Vermouth117/SwiftUI_SOLO)
+
+このプロジェクトは、SwiftUIとFirebaseを使用してログイン画面を作成するためのサンプルアプリです。  
+ユーザーはメールアドレスとパスワードを使用してログインできます。  
+`Firebase Authentication`を使用して、ユーザーの認証情報を管理します。
 
 <br>
 
