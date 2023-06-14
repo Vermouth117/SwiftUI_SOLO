@@ -14,6 +14,7 @@
 ![GitHub language count](https://img.shields.io/github/languages/count/Vermouth117/SwiftUI_SOLO)
 
 <br>
+
 このプロジェクトは、SwiftUIとFirebaseを使用してログイン画面を作成するためのサンプルアプリです。  
 ユーザーはメールアドレスとパスワードを使用してログインできます。  
 `Firebase Authentication`を使用して、ユーザーの認証情報を管理します。
