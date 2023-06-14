@@ -12,6 +12,7 @@
 ![GitHub last commit](https://img.shields.io/github/last-commit/Vermouth117/SwiftUI_SOLO)
 ![GitHub top language](https://img.shields.io/github/languages/top/Vermouth117/SwiftUI_SOLO)
 ![GitHub language count](https://img.shields.io/github/languages/count/Vermouth117/SwiftUI_SOLO)
+
 <br>
 このプロジェクトは、SwiftUIとFirebaseを使用してログイン画面を作成するためのサンプルアプリです。  
 ユーザーはメールアドレスとパスワードを使用してログインできます。  
