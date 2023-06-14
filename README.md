@@ -13,36 +13,6 @@
 ![GitHub last commit](https://img.shields.io/github/last-commit/Vermouth117/SwiftUI_SOLO)
 ![GitHub top language](https://img.shields.io/github/languages/top/Vermouth117/SwiftUI_SOLO)
 ![GitHub language count](https://img.shields.io/github/languages/count/Vermouth117/SwiftUI_SOLO)
-
-# 目次
-
-<details>
-
-<summary>目次一覧</summary>
-
-<!-- START doctoc generated TOC please keep comment here to allow auto update -->
-<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
-
-- [🥘 システム概要](#-%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0%E6%A6%82%E8%A6%81)
-  - [🥘 背景](#-%E8%83%8C%E6%99%AF)
-  - [🥘 使用 URL（デプロイ先）](#-%E4%BD%BF%E7%94%A8-url%E3%83%87%E3%83%97%E3%83%AD%E3%82%A4%E5%85%88)
-- [🥘 機能](#-%E6%A9%9F%E8%83%BD)
-- [🥘 アーキテクチャー](#-%E3%82%A2%E3%83%BC%E3%82%AD%E3%83%86%E3%82%AF%E3%83%81%E3%83%A3%E3%83%BC)
-- [🥘 プログラム構成](#-%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%A0%E6%A7%8B%E6%88%90)
-- [🥘 スキーマ](#-%E3%82%B9%E3%82%AD%E3%83%BC%E3%83%9E)
-- [🥘 使用環境](#-%E4%BD%BF%E7%94%A8%E7%92%B0%E5%A2%83)
-- [🥘 必要要件](#-%E5%BF%85%E8%A6%81%E8%A6%81%E4%BB%B6)
-- [🥘 使い方](#-%E4%BD%BF%E3%81%84%E6%96%B9)
-- [🥘 インストール](#-%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB)
-- [🥘 テスト](#-%E3%83%86%E3%82%B9%E3%83%88)
-- [🥘 デプロイ](#-%E3%83%87%E3%83%97%E3%83%AD%E3%82%A4)
-- [🥘 その他](#-%E3%81%9D%E3%81%AE%E4%BB%96)
-- [🥘 作者](#-%E4%BD%9C%E8%80%85)
-- [🥘 今後の計画](#-%E4%BB%8A%E5%BE%8C%E3%81%AE%E8%A8%88%E7%94%BB)
-
-<!-- END doctoc generated TOC please keep comment here to allow auto update -->
-
-</details>
   
 # SwiftUIとFirebaseを使用したログイン画面
 
