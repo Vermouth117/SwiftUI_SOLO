@@ -1,6 +1,6 @@
 # SwiftUI_SOLO
 
-- Git 情報
+##### Git Info
 
 <div>
   <img src="https://img.shields.io/badge/Swift-FA7343?style=for-the-badge&logo=swift&logoColor=white">
