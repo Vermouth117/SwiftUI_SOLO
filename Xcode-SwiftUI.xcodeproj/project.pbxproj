@@ -24,6 +24,8 @@
 		CEFEC11C2A384C55004DF19F /* CategoriesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFEC11B2A384C55004DF19F /* CategoriesView.swift */; };
 		CEFEC11E2A3856DD004DF19F /* SectionTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFEC11D2A3856DD004DF19F /* SectionTitleView.swift */; };
 		CEFEC1202A38636A004DF19F /* RecommendFlowerCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFEC11F2A38636A004DF19F /* RecommendFlowerCardView.swift */; };
+		CEFEC1232A389F88004DF19F /* MyCoreData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CEFEC1212A389F88004DF19F /* MyCoreData.xcdatamodeld */; };
+		CEFEC1252A38A122004DF19F /* Persistent.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFEC1242A38A122004DF19F /* Persistent.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +45,8 @@
 		CEFEC11B2A384C55004DF19F /* CategoriesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesView.swift; sourceTree = "<group>"; };
 		CEFEC11D2A3856DD004DF19F /* SectionTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionTitleView.swift; sourceTree = "<group>"; };
 		CEFEC11F2A38636A004DF19F /* RecommendFlowerCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendFlowerCardView.swift; sourceTree = "<group>"; };
+		CEFEC1222A389F88004DF19F /* MyCoreData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MyCoreData.xcdatamodel; sourceTree = "<group>"; };
+		CEFEC1242A38A122004DF19F /* Persistent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistent.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,12 +81,13 @@
 		CE503D5B2A37124A00976EAC /* Xcode-SwiftUI */ = {
 			isa = PBXGroup;
 			children = (
-				CEFEC10C2A37F412004DF19F /* GoogleService-Info.plist */,
+				CEFEC1262A38A12C004DF19F /* DB */,
 				CEFEC1052A372FBE004DF19F /* Extensions */,
 				CEFEC1022A372874004DF19F /* Views */,
 				CE503D5C2A37124A00976EAC /* Xcode_SwiftUIApp.swift */,
 				CE503D5E2A37124A00976EAC /* ContentView.swift */,
 				CE503D602A37124B00976EAC /* Assets.xcassets */,
+				CEFEC10C2A37F412004DF19F /* GoogleService-Info.plist */,
 				CE503D622A37124B00976EAC /* Preview Content */,
 			);
 			path = "Xcode-SwiftUI";
@@ -126,6 +131,15 @@
 				CEFEC11F2A38636A004DF19F /* RecommendFlowerCardView.swift */,
 			);
 			path = Components;
+			sourceTree = "<group>";
+		};
+		CEFEC1262A38A12C004DF19F /* DB */ = {
+			isa = PBXGroup;
+			children = (
+				CEFEC1212A389F88004DF19F /* MyCoreData.xcdatamodeld */,
+				CEFEC1242A38A122004DF19F /* Persistent.swift */,
+			);
+			path = DB;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -206,11 +220,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEFEC1252A38A122004DF19F /* Persistent.swift in Sources */,
 				CE503D5F2A37124A00976EAC /* ContentView.swift in Sources */,
 				CEFEC11A2A3842B8004DF19F /* HeaderView.swift in Sources */,
 				CEFEC1152A38115B004DF19F /* ShopHomeView.swift in Sources */,
 				CE503D5D2A37124A00976EAC /* Xcode_SwiftUIApp.swift in Sources */,
 				CEFEC10B2A37EE07004DF19F /* AuthView.swift in Sources */,
+				CEFEC1232A389F88004DF19F /* MyCoreData.xcdatamodeld in Sources */,
 				CEFEC1172A383C75004DF19F /* ShopScreenView.swift in Sources */,
 				CEFEC1072A373007004DF19F /* String.swift in Sources */,
 				CEFEC11E2A3856DD004DF19F /* SectionTitleView.swift in Sources */,
@@ -346,7 +362,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Xcode-SwiftUI/Preview Content\"";
-				DEVELOPMENT_TEAM = SPWM5DUV5V;
+				DEVELOPMENT_TEAM = KP2PL6ZKBR;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -375,7 +391,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Xcode-SwiftUI/Preview Content\"";
-				DEVELOPMENT_TEAM = SPWM5DUV5V;
+				DEVELOPMENT_TEAM = KP2PL6ZKBR;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -442,6 +458,19 @@
 			productName = FirebaseFirestore;
 		};
 /* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		CEFEC1212A389F88004DF19F /* MyCoreData.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				CEFEC1222A389F88004DF19F /* MyCoreData.xcdatamodel */,
+			);
+			currentVersion = CEFEC1222A389F88004DF19F /* MyCoreData.xcdatamodel */;
+			path = MyCoreData.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = CE503D512A37124A00976EAC /* Project object */;
 }

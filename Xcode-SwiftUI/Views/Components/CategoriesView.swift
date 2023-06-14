@@ -30,7 +30,7 @@ struct CategoriesView: View {
                                 }
                             })
                             .cornerRadius(12)
-                            .shadow(color: Color.black.opacity(0.15), radius: 15, x: 5, y: 5)
+                            .shadow(color: Color.black.opacity(0.15), radius: 5)
                     }
                 }
             }
