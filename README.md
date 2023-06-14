@@ -1,6 +1,6 @@
 # SwiftUIとFirebaseを使用したログイン画面
 
-## Git Infomation
+### Git Infomation
 
 <div>
   <img src="https://img.shields.io/badge/Swift-FA7343?style=for-the-badge&logo=swift&logoColor=white">
@@ -8,6 +8,8 @@
   <img src="https://img.shields.io/badge/mac%20os-000000?style=for-the-badge&logo=apple&logoColor=white">
   <img src="https://img.shields.io/badge/iOS-000000?style=for-the-badge&logo=ios&logoColor=white">
 </div>
+
+<br>
 
 ![GitHub repo size](https://img.shields.io/github/repo-size/Vermouth117/SwiftUI_SOLO)
 ![GitHub last commit](https://img.shields.io/github/last-commit/Vermouth117/SwiftUI_SOLO)
