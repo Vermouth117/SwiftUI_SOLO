@@ -14,9 +14,6 @@
 
 ## 概要
 
-<img width="695" alt="image" src="https://github.com/Vermouth117/SwiftUI_SOLO/assets/103619179/923983a5-a08c-4c46-8e93-1d170ddec76c">
-
-
 このプロジェクトは、SwiftUIとFirebaseを使用してログイン画面を作成するためのサンプルアプリです。  
 ユーザーはメールアドレスとパスワードを使用してログインできます。  
 `Firebase Authentication`を使用して、ユーザーの認証情報を管理します。
