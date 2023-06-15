@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct HeaderView: View {
+    @State private var isCartViewPresented = false
+    
     var body: some View {
         HStack {
             VStack (alignment: .leading) {
@@ -21,10 +23,17 @@ struct HeaderView: View {
             
             Spacer()
             
-            Image("logo")
-                .resizable()
-                .frame(width: 100, height: 100)
-                .opacity(0.8)
+            Button {
+                isCartViewPresented = true
+            } label: {
+                Image("logo")
+                    .resizable()
+                    .frame(width: 100, height: 100)
+                    .opacity(0.8)
+            }
+            .sheet(isPresented: $isCartViewPresented) {
+                CartView()
+            }
         }
     }
 }
