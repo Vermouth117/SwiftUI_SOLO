@@ -28,6 +28,7 @@
 		CEFEC1252A38A122004DF19F /* Persistent.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFEC1242A38A122004DF19F /* Persistent.swift */; };
 		CEFEC12B2A3A9F76004DF19F /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = CEFEC12A2A3A9F76004DF19F /* FirebaseStorage */; };
 		CEFEC12E2A3AA587004DF19F /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = CEFEC12D2A3AA587004DF19F /* SDWebImageSwiftUI */; };
+		CEFEC1302A3AD3F6004DF19F /* CartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFEC12F2A3AD3F6004DF19F /* CartView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +50,7 @@
 		CEFEC11F2A38636A004DF19F /* RecommendFlowerCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendFlowerCardView.swift; sourceTree = "<group>"; };
 		CEFEC1222A389F88004DF19F /* MyCoreData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MyCoreData.xcdatamodel; sourceTree = "<group>"; };
 		CEFEC1242A38A122004DF19F /* Persistent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistent.swift; sourceTree = "<group>"; };
+		CEFEC12F2A3AD3F6004DF19F /* CartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +116,7 @@
 				CEFEC10A2A37EE07004DF19F /* AuthView.swift */,
 				CEFEC1142A38115B004DF19F /* ShopHomeView.swift */,
 				CEFEC1162A383C75004DF19F /* ShopScreenView.swift */,
+				CEFEC12F2A3AD3F6004DF19F /* CartView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -227,6 +230,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEFEC1302A3AD3F6004DF19F /* CartView.swift in Sources */,
 				CEFEC1252A38A122004DF19F /* Persistent.swift in Sources */,
 				CE503D5F2A37124A00976EAC /* ContentView.swift in Sources */,
 				CEFEC11A2A3842B8004DF19F /* HeaderView.swift in Sources */,

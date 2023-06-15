@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import Firebase
 import FirebaseStorage
 import SDWebImageSwiftUI
 
@@ -14,10 +15,15 @@ struct RecommendFlowerCardView: View {
     var price: Int16
     var image: String
     var star: Double
+    var dataList: [[String: Any]]
+    var index: Int
     
     let storage = Storage.storage().reference()
+    let db = Firestore.firestore()
     
     @State private var imageURL: URL?
+    
+    @AppStorage("uid") var userID: String = ""
     
     var body: some View {
         VStack (alignment: .leading) {
@@ -60,11 +66,23 @@ struct RecommendFlowerCardView: View {
                     
                     Spacer()
                     
-                    Image(systemName: "plus")
-                        .foregroundColor(.white)
-                        .padding(.all, 8)
-                        .background(Color(red: 0.8, green: 0.6, blue: 0.7, opacity: 0.9))
-                        .cornerRadius(50)
+                    Button {
+                        print("push \(dataList[index])")
+                        db.collection("cart").addDocument(data: dataList[index]) { error in
+                            if let error = error {
+                                print("Error adding document: \(error)")
+                            } else {
+                                print("Document added successfully")
+                                print(userID)
+                            }
+                        }
+                    } label: {
+                        Image(systemName: "plus")
+                            .foregroundColor(.white)
+                            .padding(.all, 8)
+                            .background(Color(red: 0.8, green: 0.6, blue: 0.7, opacity: 0.9))
+                            .cornerRadius(50)
+                    }
                 }
             }
             .padding()
@@ -80,6 +98,7 @@ struct RecommendFlowerCardView: View {
     private func fetchImageURL() {
         let imageRef = storage.child("image/\(image).jpg")
         
+        // imageRef.downloadURL { url, error in ... }はFirebase StorageからイメージのダウンロードURLを非同期に取得するためのメソッド
         imageRef.downloadURL { url, error in
             if let error = error {
                 print("Failed to get download URL:", error)
@@ -87,6 +106,7 @@ struct RecommendFlowerCardView: View {
                 imageURL = url
             }
         }
+        print(dataList)
     }
 }
 

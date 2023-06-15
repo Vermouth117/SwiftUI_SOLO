@@ -14,6 +14,8 @@ struct ShopScreenView: View {
     
     @State private var documents: [DocumentSnapshot] = []
     
+    @State private var dataList: [[String: Any]] = []
+    
     var body: some View {        
         ZStack {
             Color(red: 0.95, green: 0.95, blue: 0.95)
@@ -24,12 +26,12 @@ struct ShopScreenView: View {
                 SectionTitleView(title: "Recommended")
                 ScrollView (.horizontal, showsIndicators: false) {
                     HStack (spacing: 20) {
-                        ForEach(documents, id: \.documentID) { flower in
+                        ForEach(Array(documents.enumerated()), id: \.element.documentID) { index, flower in
                             if let title = flower.data()?["title"] as? String,
                                let price = flower.data()?["price"] as? Int,
                                let image = flower.data()?["image"] as? String,
                                let star = flower.data()?["star"] as? Double {
-                                RecommendFlowerCardView(title: title, price: Int16(price), image: image, star: star)
+                                RecommendFlowerCardView(title: title, price: Int16(price), image: image, star: star, dataList: dataList, index: index)
                             }
                         }
                     }
@@ -80,6 +82,14 @@ struct ShopScreenView: View {
             }
             
             self.documents = documents
+            for flower in documents {
+                if let title = flower.data()["title"] as? String,
+                   let price = flower.data()["price"] as? Int,
+                   let image = flower.data()["image"] as? String,
+                   let star = flower.data()["star"] as? Double {
+                    dataList.append(["title": title, "price": Int16(price), "image": image, "star": star])
+                }
+            }
         }
     }
 }
