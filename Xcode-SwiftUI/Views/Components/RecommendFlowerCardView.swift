@@ -68,12 +68,27 @@ struct RecommendFlowerCardView: View {
                     
                     Button {
                         print("push \(dataList[index])")
-                        db.collection("cart").addDocument(data: dataList[index]) { error in
+//                        db.collection("cart").addDocument(data: dataList[index]) { error in
+//                            if let error = error {
+//                                print("Error adding document: \(error)")
+//                            } else {
+//                                print("Document added successfully")
+//                            }
+//                        }
+                        db.collection("users").document(userID).setData([
+                            "id": userID
+                        ]) { error in
                             if let error = error {
-                                print("Error adding document: \(error)")
+                                print("Error creating document: \(error)")
                             } else {
-                                print("Document added successfully")
-                                print(userID)
+                                print("Document created successfully.")
+                                db.collection("users").document(userID).collection("cart").addDocument(data: dataList[index]) { error in
+                                    if let error = error {
+                                        print("Error creating cart document: \(error)")
+                                    } else {
+                                        print("Cart document created successfully")
+                                    }
+                                }
                             }
                         }
                     } label: {

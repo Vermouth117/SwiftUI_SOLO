@@ -33,6 +33,7 @@ struct HeaderView: View {
             }
             .sheet(isPresented: $isCartViewPresented) {
                 CartView()
+                    .preferredColorScheme(.light)
             }
         }
     }
