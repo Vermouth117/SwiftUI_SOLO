@@ -6,6 +6,8 @@
 //
 
 import SwiftUI
+import FirebaseStorage
+import SDWebImageSwiftUI
 
 struct RecommendFlowerCardView: View {
     var title: String
@@ -13,12 +15,26 @@ struct RecommendFlowerCardView: View {
     var image: String
     var star: Double
     
+    let storage = Storage.storage().reference()
+    
+    @State private var imageURL: URL?
+    
     var body: some View {
         VStack (alignment: .leading) {
-            Image(image)
-                .resizable()
-                .aspectRatio(contentMode: .fill)
-                .frame(width: 250)
+            if let imageURL = imageURL {
+                WebImage(url: imageURL)
+                    .resizable()
+                    .aspectRatio(contentMode: .fill)
+                    .frame(width: 250)
+            } else {
+                Text("Loading image...")
+                    .frame(width: 250, height: 375)
+            }
+            
+//            Image(image)
+//                .resizable()
+//                .aspectRatio(contentMode: .fill)
+//                .frame(width: 250)
             
             VStack (alignment: .leading) {
                 Text(title)
@@ -56,6 +72,21 @@ struct RecommendFlowerCardView: View {
         .background(.white)
         .cornerRadius(20)
         .shadow(color: Color.black.opacity(0.03), radius: 15)
+        .onAppear {
+            fetchImageURL()
+        }
+    }
+    
+    private func fetchImageURL() {
+        let imageRef = storage.child("image/\(image).jpg")
+        
+        imageRef.downloadURL { url, error in
+            if let error = error {
+                print("Failed to get download URL:", error)
+            } else if let url = url {
+                imageURL = url
+            }
+        }
     }
 }
 
